@@ -5,7 +5,7 @@ import mysql.connector
 # Configuración de la conexión a la base de datos
 DB_CONFIG = {
     'host': '185.214.132.9',
-    'user': 'pjluis1010@gmail.com',
+    'user': 'u548971155_iQpBi',
     'password': 'p5#JL2i5penya',
     'database': 'u548971155_srHVY'}
 @st.cache_data
@@ -42,4 +42,5 @@ df
 #             # Crea el histograma de notas
 #             st.bar_chart(df_cuestionario['Calificacion'].value_counts().sort_index())
 #         else:
+
 #             st.write("No hay datos para este cuestionario.")
