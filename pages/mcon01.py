@@ -5,7 +5,7 @@ import mysql.connector
 # Configuración de la conexión a la base de datos
 DB_CONFIG = {
     'host': '185.214.132.9',
-    'user': 'u548971155_iQpBi',
+    'user': 'pjluis1010@gmail.com',
     'password': '>BM#d|PAFV7v',
     'database': 'u548971155_srHVY'}
 @st.cache_data
@@ -44,4 +44,5 @@ df
 #         else:
 
 #             st.write("No hay datos para este cuestionario.")
+
 
