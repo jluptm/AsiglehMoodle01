@@ -6,7 +6,7 @@ import mysql.connector
 DB_CONFIG = {
     'host': '185.214.132.9',
     'user': 'u548971155_iQpBi',
-    'password': 'p5#JL2i5penya',
+    'password': '>BM#d|PAFV7v',
     'database': 'u548971155_srHVY'}
 @st.cache_data
 def load_data():
@@ -44,3 +44,4 @@ df
 #         else:
 
 #             st.write("No hay datos para este cuestionario.")
+
