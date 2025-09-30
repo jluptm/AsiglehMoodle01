@@ -10,12 +10,13 @@ def get_database_session(url):
         'user': 'u548971155_iQpBi',
         'password': '>BM#d|PAFV7v',
         'database': 'u548971155_srHVY'}
-    f"DB_CONFIG = {DB_CONFIG}"
+    #
     return DB_CONFIG
     
 @st.cache_data
 def load_data():
-    get_database_session('185.214.132.9')
+    DB_CONFIG = get_database_session('185.214.132.9')
+    f"DB_CONFIG ====> {DB_CONFIG}"
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
         cursor = conn.cursor(dictionary=True) # dictionary=True para obtener resultados como diccionarios
@@ -50,6 +51,7 @@ df
 #         else:
 
 #             st.write("No hay datos para este cuestionario.")
+
 
 
 
