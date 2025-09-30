@@ -8,7 +8,7 @@ def conectar_mysql():
         host= '185.214.132.9',
         port= 3306,
         user= 'u548971155_iQpBi',
-        password= '',
+        password= '>BM#d|PAFV7v',
         database= 'u548971155_srHVY')
 
 @st.cache_data
