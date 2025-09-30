@@ -5,11 +5,11 @@ import mysql.connector
 @st.cache_resource
 def conectar_mysql():
     return mysql.connector.connect(
-        'host'= '185.214.132.9',
-        'port'= 3306,
-        'user'= 'u548971155_iQpBi',
-        'password'= '',
-        'database'= 'u548971155_srHVY')
+        host= '185.214.132.9',
+        port= 3306,
+        user= 'u548971155_iQpBi',
+        password= '',
+        database= 'u548971155_srHVY')
 
 @st.cache_data
 def obtener_datos():
