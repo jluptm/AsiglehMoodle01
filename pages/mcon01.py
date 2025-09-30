@@ -2,14 +2,19 @@ import streamlit as st
 import pandas as pd
 import mysql.connector
 
-# Configuración de la conexión a la base de datos
-DB_CONFIG = {
-    'host': '185.214.132.9',
-    'user': 'u548971155_iQpBi',
-    'password': '>BM#d|PAFV7v',
-    'database': 'u548971155_srHVY'}
+@st.cache_resource
+def get_database_session(url):
+    # Configuración de la conexión a la base de datos
+    DB_CONFIG = {
+        'host': '185.214.132.9',
+        'user': 'u548971155_iQpBi',
+        'password': '>BM#d|PAFV7v',
+        'database': 'u548971155_srHVY'}
+    return DB_CONFIG
+    
 @st.cache_data
 def load_data():
+    get_database_session('185.214.132.9')
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
         cursor = conn.cursor(dictionary=True) # dictionary=True para obtener resultados como diccionarios
@@ -44,6 +49,7 @@ df
 #         else:
 
 #             st.write("No hay datos para este cuestionario.")
+
 
 
 
