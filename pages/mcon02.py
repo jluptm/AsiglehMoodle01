@@ -22,9 +22,9 @@ def obtener_datos():
     #cursor.close()
     #conn.close()
     return df
-
-'df = '
-df
+dataf = obtener_datos()
+'dataf = '
+dataf
 
 
 
