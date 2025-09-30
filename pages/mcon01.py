@@ -10,6 +10,7 @@ def get_database_session(url):
         'user': 'u548971155_iQpBi',
         'password': '>BM#d|PAFV7v',
         'database': 'u548971155_srHVY'}
+    f"DB_CONFIG = {DB_CONFIG}"
     return DB_CONFIG
     
 @st.cache_data
@@ -49,6 +50,7 @@ df
 #         else:
 
 #             st.write("No hay datos para este cuestionario.")
+
 
 
 
