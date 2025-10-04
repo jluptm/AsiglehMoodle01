@@ -6,10 +6,10 @@ import mysql.connector
 def get_database_session(url):
     # Configuración de la conexión a la base de datos
     DB_CONFIG = {
-        'host': '185.214.132.9',
-        'user': 'u548971155_iQpBi',
-        'password': '>BM#d|PAFV7v',
-        'database': 'u548971155_srHVY'}
+        'host': '',
+        'user': '',
+        'password': '',
+        'database': ''}
     #
     return DB_CONFIG
     
@@ -51,6 +51,7 @@ df
 #         else:
 
 #             st.write("No hay datos para este cuestionario.")
+
 
 
 
